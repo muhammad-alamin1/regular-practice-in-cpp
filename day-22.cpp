@@ -9,8 +9,6 @@ int abc(int a, int b){
 
 void abc(){
     int p = 99;
-
-
 }
 
 int main(void)
