@@ -24,6 +24,17 @@ class Result: public Student
         }
 };
 
+/*
+    public mode
+    class Result{
+        public:
+            int roll;
+            string name;
+            void set();
+            void print();
+    }
+*/
+
 int main(void)
 {
     Result s1;
