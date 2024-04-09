@@ -30,19 +30,8 @@ class Result: public Student
             set();
             print();
         }
-};
+};0
 
-/*
-    protected mode
-    class Result{
-        protected:
-            int roll;
-            string name;
-        public:
-            void set();
-            void print();
-    }
-*/
 
 int main(void)
 {
