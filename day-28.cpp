@@ -1,4 +1,4 @@
-// multilevel inheritance
+// hierarchical inheritance
 #include <iostream>
 
 using namespace std;
@@ -7,20 +7,21 @@ class Info
 {
     private:
         int id;
+        int mark;
     public:
         void set_id();
         int get_id();
+        void get_mark();
 };
 
 class Result : public Info
 {
     private:
-        int mark;
-    public:
-        void get_mark();
+        string address;
+
 };
 
-class Student: public Result
+class Student: public Info
 {
     public:
         void print();
@@ -35,7 +36,7 @@ int Info::get_id(){
     return id;
 }
 
-void Result::get_mark(){
+void Info::get_mark(){
     cout << "Enter Mark: ";
     cin >> mark;
     cout << "Marks Is: " << mark << endl;
